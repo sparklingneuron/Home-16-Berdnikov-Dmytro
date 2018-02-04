@@ -1,0 +1,908 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+h1, h2, h3, .section-header p {
+    font-family: "Playfair Display", serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+/* main header styles */
+
+.main-header > .container {
+    padding: 50px 0 30px;
+}
+
+.main-navigation {
+    width: 100%;
+}
+
+.main-navigation h1 {
+    float: left;
+}
+
+.custom-logo-link {
+    display: inline-block;
+}
+
+.main-navigation .navigation-list {
+    float: right;
+}
+
+.main-navigation::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.navigation-list li {
+    float: left;
+    margin-right: 21px;
+    padding: 0 11px 19px;
+}
+
+.navigation-list li:last-of-type {
+    padding-right: 0;
+    margin-right: 0;
+}
+
+.navigation-list li:hover {
+    border-bottom: 5px solid #f2d488;
+    padding-bottom: 14px;
+    transition: border 0.5s;
+}
+
+.navigation-list::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.navigation-list a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #111111;
+    display: inline-block;
+    letter-spacing: 0.5px;
+}
+
+/* styles for a subsection of main header with Adam's photo */
+
+.contact-me {
+    position: relative;
+    font-size: 0;
+}
+
+.contact-me img {
+    width: 100%;
+}
+
+.contact-me .container {
+    box-sizing: border-box;
+    padding: 0 100px 140px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 0;
+}
+
+.contact-me .container div {
+    float: left;
+    border-left: 2px solid #edc152;
+    padding-left: 16px;
+    color: #ffffff;
+}
+
+.contact-me .container h2 {
+    letter-spacing: 3px;
+    font-size: 65px;
+    margin-bottom: 6px;
+}
+
+.contact-me .container span {
+    letter-spacing: 1px;
+    font-size: 31px;
+    font-weight: 200;
+}
+
+.contact-me a {
+    margin-top: 22px;
+    padding: 19px 47px;
+    font-size: 16px;
+    color: #111111;
+    font-family: "Playfair Display", serif;
+    background-color: #edc152;
+    border-radius: 25px;
+    text-decoration: none;
+    letter-spacing: 0.6px;
+    float: right;
+    transform: scale(1);
+    transition: transform 0.5s;
+}
+
+.contact-me a:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.contact-me .container::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* styles for a header of every top-level section in the body */
+
+.section-header {
+    border-left: 2px solid #edc152;
+    padding-left: 19px;
+    margin-bottom: 70px;
+    font-family: "Playfair Display", serif;
+    position: relative;
+}
+
+.section-header::before {
+    font-family: "Open Sans", sans-serif;
+    font-size: 195px;
+    position: absolute;
+    display: block;
+    top: -45px;
+    left: 0;
+    opacity: 0.05;
+}
+
+.section-header h2 {
+    font-size: 31px;
+    margin-bottom: 30px;
+    letter-spacing: 1.24px;
+}
+
+.section-header p {
+    max-width: 762px;
+    font-size: 21px;
+    letter-spacing: 0.8px;
+    line-height: 1.25;
+}
+
+section:nth-of-type(odd) .section-header::before,
+section:nth-of-type(odd) .section-header h2 {
+    color: #111111;
+}
+
+section:nth-of-type(odd) .section-header p {
+    color: #666666;
+}
+
+section:nth-of-type(even) .section-header::before,
+section:nth-of-type(even) .section-header h2 {
+    color: #ffffff;
+}
+
+section:nth-of-type(even) .section-header p {
+    color: #b9b9b9;
+}
+
+/* section "01 - about us" */
+
+.about-us .section-header::before {
+    content: "01";
+}
+
+.history {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.history h3,
+.expertise h3 {
+    color: #111111;
+    font-family: "Playfair Display", serif;
+    font-size: 21px;
+    letter-spacing: 0.84px;
+    margin-bottom: 35px;
+}
+
+.history div {
+    margin-bottom: 37px;
+}
+
+.history div:last-of-type {
+    margin-bottom: 0;
+}
+
+.history dt {
+    color: #111111;
+    font-size: 21px;
+    font-weight: 700;
+    letter-spacing: 0.84px;
+    margin-right: 47px;
+    display: inline-block;
+}
+
+.history dd {
+    max-width: 450px;
+    color: #111111;
+    font-size: 16px;
+    letter-spacing: 0.6px;
+    line-height: 1.25;
+    display: inline-block;
+    margin: 0;
+}
+
+.expertise {
+    float: left;
+    width: 50%;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+
+.expertise p {
+    color: #666666;
+    line-height: 31px;
+    max-width: 486px;
+    letter-spacing: 0.5px;
+}
+
+.about-us .container::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* section "02 - practis area" */
+
+.practis-area {
+    background: #111111;
+}
+
+.practis-area .container {
+    padding-bottom: 24px;
+}
+
+.practis-area .section-header {
+    margin-bottom: 100px;
+}
+
+.practis-area .section-header::before {
+    content: "02";
+}
+
+.services {
+    padding-left: 74px;
+    color: #ffffff;
+    font-size: 0;
+}
+
+.services h3 {
+    font-size: 21px;
+    letter-spacing: 0.84px;
+    margin-bottom: 32px;
+}
+
+.services p {
+    line-height: 1.5;
+    max-width: 357px;
+}
+
+.services li {
+    display: inline-block;
+    margin-right: 61px;
+    margin-bottom: 72px;
+    vertical-align: top;
+}
+
+.services li::before {
+    font-size: 45px;
+    color: #e8bf5d;
+    float: left;
+    width: 100px;
+    margin-right: 30px;
+    text-align: right;
+}
+
+.services div {
+    float: left;
+}
+
+.services li::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+/* section "03 - meet our attorney" */
+
+.meet-our-attorney .section-header::before {
+    content: "03";
+}
+
+.attorney-list li {
+    float: left;
+    max-width: 270px;
+    margin-right: 30px;
+}
+
+.attorney-list li:last-of-type {
+    margin-right: 0;
+}
+
+.attorney-list img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.attorney-list h3 {
+    margin-bottom: 14px;
+    color: #111111;
+    font-size: 21px;
+    letter-spacing: 0.84px;
+}
+
+.attorney-list span {
+    color: #666666;
+    letter-spacing: 0.56px;
+}
+
+.attorney-list::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* section "04 - our clients say" */
+
+.our-clients-say {
+    background: url("../img/bg-clients-say.jpg") no-repeat;
+    background-position: top center;
+    background-size: cover;
+    position: relative;
+}
+
+.our-clients-say::before {
+    background-color: rgba(0, 0, 0, 0.9);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.our-clients-say .container {
+    position: relative;
+}
+
+.our-clients-say .section-header::before {
+    content: "04";
+}
+
+.client-details {
+    padding-top: 20px;
+    margin-bottom: 24px;
+}
+
+.client-details .outer-div {
+    width: 33.33%;
+    float: left;
+    box-sizing: border-box;
+    padding-left: 20px;
+}
+
+.client-details .inner-div {
+    width: 100%;
+    background-color: #edc152;
+}
+
+.client-details img {
+    width: 100%;
+    height: auto;
+    top: -20px;
+    left: -20px;
+    position: relative;
+}
+
+.client-details > div:last-child {
+    float: left;
+    width: 66.66%;
+    box-sizing: border-box;
+    padding: 0 40px 0 78px;
+    color: #ffffff;
+}
+
+.client-details blockquote {
+    margin-bottom: 39px;
+    max-width: 600px;
+    width: 100%;
+    line-height: 2;
+    letter-spacing: 0.5px;
+    position: relative;
+}
+
+.client-details blockquote::before {
+    content: '“';
+    display: inline;
+    position: absolute;
+    opacity: 0.25;
+    color: #ffffff;
+    font-family: "Playfair Display", serif;
+    font-size: 96px;
+    font-weight: 400;
+    line-height: 0.65;
+    letter-spacing: 0.56px;
+    left: -8px;
+    transform: translateX(-100%);
+}
+
+.client-details h3 {
+    margin-bottom: 14px;
+    font-size: 21px;
+    letter-spacing: 0.84px;
+}
+
+.client-details span {
+    letter-spacing: 0.56px;
+}
+
+.client-details::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.slider {
+    width: 45px;
+    margin: 0 auto;
+}
+
+.slider li {
+    width: 14px;
+    height: 14px;
+    margin-right: 1px;
+    float: left;
+    text-align: center;
+}
+
+.slider a {
+    vertical-align: middle;
+    display: inline-block;
+    box-sizing: border-box;
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+}
+
+.slider a:hover {
+    width: 14px;
+    height: 14px;
+    border: none;
+    background: #ffffff;
+    transition: 0.25s;
+}
+
+.slider::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* section "05 - recent publications" */
+
+.recent-publications .section-header::before {
+    content: "05";
+}
+
+.publications-list {
+    font-size: 0;
+}
+
+.publications-list li {
+    margin-right: 30px;
+    max-width: 370px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.publications-list li:last-of-type {
+    margin-right: 0;
+}
+
+.publications-list img {
+    margin-bottom: 30px;
+    width: 100%;
+    height: auto;
+}
+
+.publications-list h3 {
+    margin-bottom: 12px;
+}
+
+.publications-list h3 a {
+    display: inline-block;
+    color: #111111;
+    font-family: "Playfair Display", serif;
+    font-size: 21px;
+    letter-spacing: 0.84px;
+    text-decoration: none;
+    transition: letter-spacing 0.5s;
+}
+
+.publications-list h3 a:hover {
+    letter-spacing: 1.5px;
+    transition: letter-spacing 0.5s;
+}
+
+.publications-list header {
+    margin-bottom: 40px;
+}
+
+.publications-list header > a {
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+.publications-list header > a:hover {
+    opacity: 0.7;
+    transition: opacity 0.5s;
+}
+
+.publications-list header p {
+    float: left;
+    font-size: 16px;
+    color: #666666;
+    font-style: italic;
+}
+
+.publications-list header span {
+    color: #111111;
+    font-size: 16px;
+    font-style: normal;
+}
+
+.publications-list time {
+    float: right;
+    font-size: 16px;
+    color: #666666;
+    font-style: italic;
+
+}
+
+.publications-list header::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.publications-list article {
+    padding-bottom: 29px;
+    border-bottom: 3px solid #e8bf5d;;
+}
+
+.publications-list article > p {
+    margin-bottom: 40px;
+    max-width: 357px;
+    color: #666666;
+    letter-spacing: 0.5px;
+    line-height: 2;
+}
+
+.publications-list button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: inherit;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    transform: scale(1);
+    transition: transform 0.5s;
+}
+
+.publications-list button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+
+.publications-list button span {
+    color: #111111;
+    margin-left: 5px;
+    letter-spacing: 0.64px;
+    font-size: 16px;
+}
+
+.publications-list .btn-comments {
+    float: left;
+}
+
+.publications-list .btn-share {
+    float: right;
+}
+
+.publications-list article::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* section "06 - faq" */
+
+.faq {
+    background-color: #111111;
+}
+
+.faq .container {
+    padding-bottom: 170px;
+}
+
+.faq .section-header::before {
+    content: "06";
+}
+
+.faq-list {
+    padding-right: 20px;
+    box-sizing: border-box;
+    float: left;
+    width: 50%;
+}
+
+.faq-list li {
+    padding: 19px 0 16px;
+    border-bottom: 3px solid #e8bf5d;
+}
+
+.faq-list a {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 700;
+    transition: color 0.5s;
+}
+
+.faq-list span {
+    float: right;
+}
+
+.faq-list a:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.faq-list a:hover {
+    color: #e8bf5d;
+    transition: color 0.5s;
+}
+
+.faq-list a:hover span::before {
+    content: "\f068";
+}
+
+.faq .right-area {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 20px 0 0 20px;
+}
+
+.faq .right-area p {
+    box-sizing: border-box;
+    max-width: 500px;
+    width: 100%;
+    min-height: 290px;
+    padding: 42px 47px;
+    box-shadow: 0 12px 40px rgba(216, 178, 87, 0.32);
+    border-radius: 3px;
+    background-color: #e8bf5d;
+    color: #111111;
+    line-height: 2.3;
+    letter-spacing: 0.56px;
+}
+
+.faq .container::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* section "07 - Feel Free to Contact" */
+
+.contact .container {
+    padding-bottom: 76px;
+}
+
+.contact .section-header::before {
+    content: "07";
+}
+
+.contact-form {
+    padding: 75px 60px 52px 50px;
+    box-shadow: 0 12px 40px rgba(104, 86, 42, 0.1);
+    border-radius: 3px;
+    box-sizing: border-box;
+    max-width: 870px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.contact-form ul {
+    padding-right: 30px;
+    width: 50%;
+    box-sizing: border-box;
+    float: left;
+}
+
+.contact-form li {
+    width: 100%;
+}
+
+.contact-form input[type="text"],
+textarea {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid rgba(51, 51, 51, 0.2);
+    font-style: italic;
+    color: #b9b9b9;
+    margin-top: 36px;
+    padding-bottom: 9px;
+}
+
+.contact-form textarea {
+    resize: none;
+    margin-bottom: 32px;
+}
+
+.contact-form input[type='submit'] {
+    border: none;
+    background-color: #e8bf5d;
+    border-radius: 25px;
+    padding: 17px 32px;
+    color: #111111;
+    font-family: "Playfair Display", serif;
+    font-size: 16px;
+    transform: scale(1);
+    transition: transform 0.5s;
+}
+
+.contact-form input[type='submit']:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+
+::-webkit-input-placeholder { /* Chrome/Safari */
+    color: #b9b9b9;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+    color: #b9b9b9;
+}
+
+:-ms-input-placeholder { /* IE 10+ */
+    color: #b9b9b9;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    color: #b9b9b9;
+}
+
+
+.contact-form .outer-div {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 20px 0 0 17px;
+}
+
+.contact-form .inner-div {
+    width: 100%;
+    background-color: #e8bf5d;
+}
+
+.contact-form img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: -20px;
+    left: 20px;
+}
+
+.contact-form::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* footer */
+
+footer {
+    background-color: #111111;
+}
+
+footer .container {
+    padding: 32px 0;
+}
+
+.copyright {
+    float: left;
+    color: #b5b5b5;
+    font-size: 16px;
+    font-family: "Playfair Display", serif;
+}
+
+.copyright a {
+    text-decoration: none;
+}
+
+.copyright span {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.social {
+    float: right;
+    font-size: 0;
+}
+
+.social li {
+    margin-left: 20px;
+    display: inline-block;
+    font-size: 0;
+}
+
+.social li a {
+    font-size: 0;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    text-decoration: none;
+    color: #fbfbfb;
+}
+
+.social li:nth-of-type(1) a {
+    background-image: url("../img/logo-facebook.png");
+    background-repeat: no-repeat;
+}
+
+.social li:nth-of-type(2) a {
+    background-image: url("../img/logo-twitter.png");
+    background-repeat: no-repeat;
+}
+
+.social li:nth-of-type(3) a {
+    background-image: url("../img/logo-g-plus.png");
+    background-repeat: no-repeat;
+}
+
+.social li:nth-of-type(4) a {
+    background-image: url("../img/logo-instagram.png");
+    background-repeat: no-repeat;
+}
+
+footer .container::after {
+    content: "";
+    clear: both;
+    display: block;
+}
